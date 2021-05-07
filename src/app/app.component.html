@@ -1,11 +1,45 @@
-<p-tabView>
-  <p-tabPanel header="Header 1">
-     Content 1
-  </p-tabPanel>
-  <p-tabPanel header="Header 2">
-      Content 2
-  </p-tabPanel>
-  <p-tabPanel header="Header 3">
-      Content 3
-  </p-tabPanel>
-</p-tabView>
+<div class="container-sm">
+  <div class="row">
+    <div class="col-12">
+      <h1>Launches</h1>
+    </div>
+    <div class="col-12 mt-2">
+      <label for="description" class="form-label">Description</label>
+      <input
+        id="description"
+        class="form-control text-uppercase"
+        type="text"
+        pInputText
+      />
+    </div>
+    <div class="col-12 mt-2">
+      <label for="period" class="form-label d-block">Period</label>
+      <input
+        id="period"
+        class="form-control d-inline-block"
+        type="text"
+        style="width: 120px"
+        pInputText
+      />
+      <label class="mx-2"> - </label>
+      <input
+        class="form-control d-inline-block"
+        type="text"
+        style="width: 120px"
+        pInputText
+      />
+    </div>
+    <div class="col-12 mt-3">
+      <button
+        pButton
+        pRipple
+        type="button"
+        icon="pi pi-check"
+        iconPos="right"
+        label="Save"
+        class="p-button-sm p-button-rounded"
+        title="Add register"
+      ></button>
+    </div>
+  </div>
+</div>
