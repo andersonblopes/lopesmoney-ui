@@ -4,6 +4,68 @@ body {
   color: #404c51;
 }
 
-label{
+label {
   font-weight: bold;
 }
+
+/* Table */
+.col-decimal-header {
+  width: 120px;
+}
+
+.col-decimal {
+  text-align: right !important;
+}
+
+.col-date-header {
+  width: 120px;
+}
+
+.col-date {
+  text-align: center;
+}
+
+.col-actions {
+  width: 150px;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.space-icons {
+  margin: 0 .50em !important;
+  font-size: .2em !important;
+}
+
+/* Table responsive*/
+@media (min-width: 40em) {
+  .col-decimal-header {
+    width: 120px;
+    text-align: left !important;
+  }
+
+  .col-decimal {
+    text-align: right !important;
+  }
+
+  .col-date-header {
+    width: 120px;
+  }
+
+  .col-date {
+    text-align: center !important;
+  }
+
+  .col-actions-header {
+    width: 115px;
+  }
+
+  .col-actions {
+    width: 115px;
+    text-align: center !important;
+  }
+
+  .col-actions .p-button {
+    margin: 1px;
+  }
+}
+

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { TooltipModule } from 'primeng/tooltip';
+import { TableModule } from 'primeng/table';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +18,8 @@ import { TooltipModule } from 'primeng/tooltip';
     InputTextModule,
     ButtonModule,
     TooltipModule,
+    TableModule,
+    DividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
