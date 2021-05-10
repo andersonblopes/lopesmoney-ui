@@ -10,9 +10,10 @@ import { TooltipModule } from 'primeng/tooltip';
 import { TableModule } from 'primeng/table';
 import { DividerModule } from 'primeng/divider';
 import { LaunchSearchComponent } from './launch-search/launch-search.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, LaunchSearchComponent],
+  declarations: [AppComponent, LaunchSearchComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
