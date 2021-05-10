@@ -20,7 +20,7 @@
       iconPos="right"
       label="Search"
       class="p-button-sm p-button-rounded"
-      title="Search registers"
+      pTooltip="Search registers"
     ></button>
   </div>
 </div>
@@ -55,11 +55,13 @@
           </td>
           <td>
             <span class="p-column-title">Status</span>
-            {{person.status}}
+            <a href="#" class="people-table-link"
+               pTooltip="{{person.status ? 'Deactivate' : 'Active'}}"
+               tooltipPosition="top">{{person.status ? 'Active' : 'Inactive'}}</a>
           </td>
           <td class="col-actions">
-            <a class="space-icons" pButton icon="pi pi-pencil" title="Edit"></a>
-            <button class="space-icons" pButton icon="pi pi-trash" title="Delete"></button>
+            <a class="space-icons" pButton icon="pi pi-pencil" pTooltip="Edit" tooltipPosition="left"></a>
+            <button class="space-icons" pButton icon="pi pi-trash" pTooltip="Delete" tooltipPosition="right"></button>
           </td>
         </tr>
       </ng-template>
@@ -74,7 +76,7 @@
     type="button"
     label="New Person"
     class="p-button-sm"
-    title="Create a new Person"
+    pTooltip="Create a new Person"
   ></button>
 </div>
 

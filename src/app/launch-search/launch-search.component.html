@@ -37,7 +37,7 @@
       iconPos="right"
       label="Search"
       class="p-button-sm p-button-rounded"
-      title="Search registers"
+      pTooltip="Search registers"
     ></button>
   </div>
 </div>
@@ -82,8 +82,8 @@
             {{launch.payDate}}
           </td>
           <td class="col-actions">
-            <a class="space-icons" pButton icon="pi pi-pencil" title="Edit"></a>
-            <button class="space-icons" pButton icon="pi pi-trash" title="Delete"></button>
+            <a class="space-icons" pButton icon="pi pi-pencil" pTooltip="Edit" tooltipPosition="left"></a>
+            <button class="space-icons" pButton icon="pi pi-trash" pTooltip="Delete" tooltipPosition="right"></button>
           </td>
         </tr>
       </ng-template>
@@ -98,7 +98,7 @@
     type="button"
     label="New launch"
     class="p-button-sm"
-    title="Create a new Launch"
+    pTooltip="Create a new Launch"
   ></button>
 </div>
 
