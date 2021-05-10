@@ -12,9 +12,10 @@ import { DividerModule } from 'primeng/divider';
 import { LaunchSearchComponent } from './launch-search/launch-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PeopleSearchComponent } from './people-search/people-search.component';
+import { FieldColoredDirective } from './directives/field-colored.directive';
 
 @NgModule({
-  declarations: [AppComponent, LaunchSearchComponent, NavbarComponent, PeopleSearchComponent],
+  declarations: [AppComponent, LaunchSearchComponent, NavbarComponent, PeopleSearchComponent, FieldColoredDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
