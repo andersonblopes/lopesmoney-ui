@@ -1,0 +1,94 @@
+<div class="row">
+  <div class="col-12">
+    <h1>New Launch</h1>
+  </div>
+</div>
+<form>
+  <div class="row mt-2">
+    <div class="col-6 col-md-3">
+      <label for="expirationDate" class="form-label">Expiration Date</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="expirationDate"
+      />
+    </div>
+    <div class="col-6 col-md-3">
+      <label for="payment" class="form-label">Payment</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="payment"
+      />
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12 col-md-10">
+      <label for="description" class="form-label">Description</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="description"
+      />
+    </div>
+    <div class="col-12 col-md-2">
+      <label for="valuePayment" class="form-label">Value</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="valuePayment"
+             placeholder="0,00"
+      />
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12 col-md-6">
+      <label for="category" class="form-label">Category</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="category"
+      />
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="person" class="form-label">Person</label>
+      <input pInputText
+             type="text"
+             class="form-control"
+             id="person"
+      />
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col">
+      <label for="notes" class="form-label">Notes</label>
+      <textarea pInputTextarea [rows]="3" [cols]="30"
+                class="form-control"
+                id="notes"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="col-12 mt-3">
+    <button
+      pButton
+      pRipple
+      type="button"
+      icon="pi pi-check"
+      iconPos="right"
+      label="Save"
+      class="p-button-sm p-button-rounded"
+      pTooltip="Save a launch"
+    ></button>
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="New"
+      class="p-button-info p-button-sm p-button-rounded"
+      pTooltip="New launch"
+    ></button>
+    <p-button label="Back to search" styleClass="p-button-link"></p-button>
+  </div>
+</form>
+
