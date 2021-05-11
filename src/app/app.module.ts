@@ -9,13 +9,19 @@ import { ButtonModule } from 'primeng/button';
 import { TooltipModule } from 'primeng/tooltip';
 import { TableModule } from 'primeng/table';
 import { DividerModule } from 'primeng/divider';
-import { LaunchSearchComponent } from './launch-search/launch-search.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PeopleSearchComponent } from './people-search/people-search.component';
+import { LaunchSearchComponent } from './components/launch-search/launch-search.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PeopleSearchComponent } from './components/people-search/people-search.component';
 import { FieldColoredDirective } from './directives/field-colored.directive';
 
 @NgModule({
-  declarations: [AppComponent, LaunchSearchComponent, NavbarComponent, PeopleSearchComponent, FieldColoredDirective],
+  declarations: [
+    AppComponent,
+    LaunchSearchComponent,
+    NavbarComponent,
+    PeopleSearchComponent,
+    FieldColoredDirective,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
