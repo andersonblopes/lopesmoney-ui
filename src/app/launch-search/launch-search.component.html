@@ -4,7 +4,7 @@
   </div>
   <div class="col-12 mt-2">
     <label for="description" class="form-label">Description</label>
-    <input appFieldColored
+    <input appFieldColored [color]="'#fffefc'"
            id="description"
            class="form-control text-uppercase"
            type="text"
@@ -69,17 +69,17 @@
           </td>
           <td class="col-date">
             <span class="p-column-title">Created</span>
-            {{launch.createDate}}
+            {{launch.createDate | date:'dd/MM/y'}}
           </td>
           <td class="col-decimal">
             <span class="p-column-title">Price</span>
             <span [ngClass]="launch.type === 'DESPESA' ? 'text-danger' : 'text-primary'">
-                {{launch.price}}
+                {{launch.price | currency:'EUR':true: '1.2-2'}}
               </span>
           </td>
           <td class="col-date">
             <span class="p-column-title">Payment</span>
-            {{launch.payDate}}
+            {{launch.payDate | date:'dd/MM/y'}}
           </td>
           <td class="col-actions">
             <a class="space-icons" pButton icon="pi pi-pencil" pTooltip="Edit" tooltipPosition="left"></a>

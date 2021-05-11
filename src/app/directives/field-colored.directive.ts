@@ -1,13 +1,15 @@
-import { Directive, HostBinding, HostListener } from '@angular/core';
+import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appFieldColored]',
 })
 export class FieldColoredDirective {
-  @HostBinding('style.backgroundColor') backgroundColor: string | undefined;
+  @Input() color = 'lightgray';
+
+  @HostBinding('style.backgroundColor') backgroundColor = '';
 
   @HostListener('focus') onFocus(): void {
-    this.backgroundColor = 'lightgray';
+    this.backgroundColor = this.color;
   }
 
   @HostListener('blur') onBlur(): void {
